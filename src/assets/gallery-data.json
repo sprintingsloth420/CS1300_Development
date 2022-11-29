@@ -1,0 +1,146 @@
+[
+  {
+    "name": "The Starry Night",
+    "artist":"Vincent van Gogh",
+    "year":1889,
+    "media":"oil",
+    "location":"US",
+    "dimension":92,
+    "description": "Cliche, but I teared up when I looked at the brushstrokes with my eyes.",
+    "image": "images/starry.jpg",
+    "default":1
+  },
+
+  {
+    "name": "Starry Night Over the Rhone",
+    "artist":"Vincent van Gogh",
+    "year":1888,
+    "media":"oil",
+    "location":"France",
+    "dimension":92,
+    "description": "Conspiracy theories about the running away couple.",
+    "image": "images/rhone.jpg",
+    "default":2
+  },
+
+  {
+    "name": "Branches with Almond Blossom",
+    "artist":"Vincent van Gogh",
+    "year":1890,
+    "media":"oil",
+    "location":"Netherlands",
+    "dimension":92,
+    "description": "Breathtaking colors.",
+    "image": "images/branches.jpg",
+    "default":3
+  },
+
+  {
+    "name": "Rouen Cathedral, the Portal, Morning Fog",
+    "artist":"Claude Monet",
+    "year":1894,
+    "media":"oil",
+    "location":"Germany",
+    "dimension":106,
+    "description": "A study of colors, lights and shadows, and mood.",
+    "image": "images/cathedal.jpg",
+    "default":4
+  },
+  
+  {
+    "name": "The Magpie",
+    "artist":"Claude Monet",
+    "year":1869,
+    "media":"oil",
+    "location":"France",
+    "dimension":130,
+    "description": "You can hear the silence.",
+    "image": "images/magpie.jpg",
+    "default":5
+  },
+
+  {
+    "name": "Office in a Small City",
+    "artist":"Edward Hopper",
+    "year":1953,
+    "media":"oil",
+    "location":"US",
+    "dimension":102,
+    "description": "Mood.",
+    "image": "images/office.jpg",
+    "default":6
+  },
+
+  {
+    "name": "Plaster male torso",
+    "artist":"Pablo Picasso",
+    "year":1893,
+    "media":"pencil",
+    "location":"Unknown",
+    "dimension":49,
+    "description": "Thought he didn't really know how to draw - he did this when he was 12.",
+    "image": "images/torso.jpg",
+    "default":7
+  },
+
+  {
+    "name": "Praying Hands",
+    "artist":"Albrecht Dürer",
+    "year":1508,
+    "media":"ink",
+    "location":"Austria",
+    "dimension":28,
+    "description": "A sense of sacredness.",
+    "image": "images/hands.jpg",
+    "default":8
+  },
+
+  {
+    "name": "Snow Storm - Steamboat off a Harbour's Mouth",
+    "artist":"J.M.W. Turner",
+    "year":1842,
+    "media":"oil",
+    "location":"UK",
+    "dimension":122,
+    "description": "Waves and brushstrokes.",
+    "image": "images/storm.jpg",
+    "default":9
+  },
+
+  {
+    "name": "Nocturne in Black and Gold – the Falling Rocket",
+    "artist":"James McNeill Whistler",
+    "year":1875,
+    "media":"oil",
+    "location":"US",
+    "dimension":60,
+    "description": "Art for art's sake.",
+    "image": "images/nocturne.jpg",
+    "default":10
+  },
+
+  {
+    "name": "Morning Glory with Black",
+    "artist":"Georgia O'Keeffe",
+    "year":1926,
+    "media":"oil",
+    "location":"US",
+    "dimension":91,
+    "description": "A colorful white.",
+    "image": "images/flower.jpg",
+    "default":11
+  },
+
+  {
+    "name": "White Canoe",
+    "artist":"Peter Doig",
+    "year":1990,
+    "media":"oil",
+    "location":"UK",
+    "dimension":241,
+    "description": "A sense of horror created by colors.",
+    "image": "images/canoe.jpg",
+    "default":12
+  }
+
+]
