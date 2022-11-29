@@ -9,7 +9,7 @@ This website displays 12 of my personal favorite artworks including pictures, ba
 This website hence serves as a prototype and can be further developed so that the user may, for example, look for their paintings that they can go and see in different countries, sorted and filtered according to their preference.
 
 ### Usability Principles Considered
-
+The website has a clear layout, where all the control panels are on the left and the items are listed on the right. The title of each artwork has a different font weight and size, creating a hiearchy in texts. The buttons are emphasized with a different color.
 
 ### Organization of Components
 There are five components in total. Four of them are control panels, including the Sort panel, the Filter1 and Filter2 panels, and the aggregate Boookmark panel. The other componenet is GalleryItem for each of the artworks displaying a picture, information, and a bookmark button.
