@@ -104,13 +104,10 @@ function App() {
       <div className="Body">
         <div className="Filter">
           <Sort sort={sort} setSort={setSort}/>
+          {console.log(sort)}
           {matchesSort({sort})}
           <Filter1 oil={oil} pencil={pencil} ink ={ink} type1={type1} setType1={setType1}/>
           <Filter2 US={US} France={France} Netherlands={Netherlands} Germany={Germany} Austria={Austria} UK={UK} Unknown={Unknown} type2={type2} setType2={setType2}/>
-          {/* {count}
-          {bookmark.map((item, index) => (
-              <p>{item}</p>
-            ))} */}
           <Bookmark count={count} bookmark={bookmark} tdim={tdim}></Bookmark>
           <Button variant="contained" size="large" onClick={handleReset}>Reset</Button>
         </div>
