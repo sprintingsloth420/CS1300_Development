@@ -115,8 +115,9 @@ function App() {
 
       <div className="Body">
         <div className="Filter">
+        {matchesSort({sorting})}
           <Sort sorting={sorting} setSort={setSort}/>
-          {matchesSort({sorting})}
+          
           {console.log({sorting})}
           <Filter1 oil={oil} pencil={pencil} ink ={ink} type1={type1} setType1={setType1}/>
           <Filter2 US={US} France={France} Netherlands={Netherlands} Germany={Germany} Austria={Austria} UK={UK} Unknown={Unknown} type2={type2} setType2={setType2}/>
