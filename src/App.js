@@ -14,11 +14,11 @@ galleryData.forEach((item) => {
 });
 
 // renders sort
-function matchesSort({sort}){
-  if(sort === "year"){
+function matchesSort(sorting){
+  if(Object.values(sorting) == "year"){
     galleryData = galleryData.sort((a, b) => a.year - b.year);
   }
-  else if(sort === "dimension"){
+  else if(Object.values(sorting) == "dimension"){
     galleryData = galleryData.sort((a, b) => a.dimension - b.dimension);
   }
   else{
@@ -44,7 +44,7 @@ function matchesType({item,type1,type2}){
 
 function App() {
   // sort state var
-  const [sort, setSort] = useState("default");
+  const [sorting, setSort] = useState("default");
 
   // filter state var
   const [type1,setType1] = useState({
@@ -103,14 +103,13 @@ function App() {
 
       <div className="Body">
         <div className="Filter">
-          <Sort sort={sort} setSort={setSort}/>
-          
+          <Sort sorting={sorting} setSort={setSort}/>
+          {matchesSort({sorting})}
           <Filter1 oil={oil} pencil={pencil} ink ={ink} type1={type1} setType1={setType1}/>
           <Filter2 US={US} France={France} Netherlands={Netherlands} Germany={Germany} Austria={Austria} UK={UK} Unknown={Unknown} type2={type2} setType2={setType2}/>
           <Bookmark count={count} bookmark={bookmark} tdim={tdim}></Bookmark>
           <Button variant="contained" size="large" onClick={handleReset}>Reset</Button>
-          {console.log(sort)}
-          {matchesSort({sort})}
+          
         </div>
   
         <div className = "GalleryItems">
