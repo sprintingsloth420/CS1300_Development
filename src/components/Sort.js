@@ -8,8 +8,7 @@ import FormLabel from '@mui/material/FormLabel';
 // Source: https://mui.com/material-ui/react-radio-button/
 export default function Sort({sort,setSort}) {
     const handleSort = (event) => {
-        const asort = event.target.value;
-        setSort(asort);
+        setSort(event.target.value);
       };
 
   return (
