@@ -14,17 +14,17 @@ galleryData.forEach((item) => {
 });
 
 // renders sort
-function matchesSort(sorting){
-  if(Object.values(sorting) == "year"){
-    galleryData = galleryData.sort((a, b) => a.year - b.year);
-  }
-  else if(Object.values(sorting) == "dimension"){
-    galleryData = galleryData.sort((a, b) => a.dimension - b.dimension);
-  }
-  else{
-    galleryData = galleryData.sort((a, b) => a.default - b.default);
-  }
-}
+// function matchesSort({sorting}){
+//   if(sorting === "year"){
+//     galleryData = galleryData.sort((a, b) => a.year - b.year);
+//   }
+//   else if(sorting == "dimension"){
+//     galleryData = galleryData.sort((a, b) => a.dimension - b.dimension);
+//   }
+//   else{
+//     galleryData = galleryData.sort((a, b) => a.default - b.default);
+//   }
+// }
 
 // renders filters
 function matchesType({item,type1,type2}){
@@ -45,6 +45,18 @@ function matchesType({item,type1,type2}){
 function App() {
   // sort state var
   const [sorting, setSort] = useState("default");
+
+  const matchesSort=({sorting})=>{
+    if(sorting === "year"){
+      galleryData = galleryData.sort((a, b) => a.year - b.year);
+    }
+    else if(sorting == "dimension"){
+      galleryData = galleryData.sort((a, b) => a.dimension - b.dimension);
+    }
+    else{
+      galleryData = galleryData.sort((a, b) => a.default - b.default);
+    }
+  }
 
   // filter state var
   const [type1,setType1] = useState({
@@ -105,11 +117,12 @@ function App() {
         <div className="Filter">
           <Sort sorting={sorting} setSort={setSort}/>
           {matchesSort({sorting})}
+          {console.log({sorting})}
           <Filter1 oil={oil} pencil={pencil} ink ={ink} type1={type1} setType1={setType1}/>
           <Filter2 US={US} France={France} Netherlands={Netherlands} Germany={Germany} Austria={Austria} UK={UK} Unknown={Unknown} type2={type2} setType2={setType2}/>
           <Bookmark count={count} bookmark={bookmark} tdim={tdim}></Bookmark>
           <Button variant="contained" size="large" onClick={handleReset}>Reset</Button>
-          
+  
         </div>
   
         <div className = "GalleryItems">
