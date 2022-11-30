@@ -118,7 +118,7 @@ function App() {
         {matchesSort({sorting})}
           <Sort sorting={sorting} setSort={setSort}/>
           
-          {console.log({sorting})}
+          {/* {console.log({sorting})} */}
           <Filter1 oil={oil} pencil={pencil} ink ={ink} type1={type1} setType1={setType1}/>
           <Filter2 US={US} France={France} Netherlands={Netherlands} Germany={Germany} Austria={Austria} UK={UK} Unknown={Unknown} type2={type2} setType2={setType2}/>
           <Bookmark count={count} bookmark={bookmark} tdim={tdim}></Bookmark>
