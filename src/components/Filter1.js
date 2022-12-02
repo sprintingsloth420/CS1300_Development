@@ -18,7 +18,7 @@ export default function Filter1({oil,pencil,ink,type1,setType1}) {
 
   return (
     <div>
-      <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
+      <FormControl component="fieldset" variant="standard">
         <FormLabel component="legend">Media</FormLabel>
         <FormGroup>
           <FormControlLabel

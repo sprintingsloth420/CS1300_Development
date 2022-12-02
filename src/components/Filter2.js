@@ -18,7 +18,7 @@ export default function Filter2({US,France,Netherlands,Germany,Austria,UK,Unknow
 
   return (
     <div>
-      <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
+      <FormControl component="fieldset" variant="standard">
         <FormLabel component="legend">Current Location</FormLabel>
         <FormGroup>
           <FormControlLabel
